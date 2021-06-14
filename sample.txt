@@ -1,0 +1,247 @@
+What is stored program concept
+Show IEEE 754 Standards for Binary Floating-Point Representation for 32 bit single  format and 64 bit double format.
+What are applications of Microprogramming? 
+What is Virtual Memory? 
+Explain in bfief function of 8089 I/O Processor.
+Name the Flynn's Classification of Parallel Processing Systems.  
+Dralyirt e flow chart for Booth's Algorithm for Twos Complement Multiplication
+Explain with diagram functioning of Tvlicroprogrammed Control Unit
+What are the differences between RISC and CISC processors?
+Describe hardwired control unit and specify its advantages.
+What are characteristics of memory devices'
+Explain in details Memory Hierarchy with examples.
+What are elements of cache design? Explain in details.
+What are major requirements f:Pr an I/O module?
+Explain the DINvetA based ciata transfer techniques for I/O devices. 
+ Explain concepts of nanoprogramming.  
+What is instruction pipelining? 
+Touch Pad
+  Programmed I/O
+What are the types of pipeline hazards ?
+ Explain in brief memory mapped I/O.
+Explain in detail cache coherence.
+Draw flow chart of Booth's algorithm.
+Define stored program concept and draw Von Neumann's Architecture.
+ Explain in detail different types of addressing modes. 
+Multiply ( — 2)10 and (— 5)10 using Booth's Algorithm
+ Explain Wilke's Engine (Hardwired Control Unit) in detail.
+Explain virtual memory with reference to memocy hierarchy, seg"
+Explain features of RISC and CISC processors.
+Explain six stage instruction pipeline with suitable diagram. 
+ Explain various high speed meffica-ies such as interleaved memories and caches.
+Explain LRU page replacement policy with suitable example.
+What is Bus Arbitration ? Explain any two techniques of Bus Arbitration.
+Nano progamming
+DMA (Direct Memory Access)
+Plotter.
+What are applications of Microprogramming? 
+What is stored program concept in digital computer? 
+List the Flynn's Classification of Parallel Processing Systems. 
+Draw flowchart for Booth's Algorithm for Twos Complement Multiplication.  
+What is Associative memory?  
+Explain in brief Programmed VO.   
+Explain with diagram functioning of Hardwired Control Unit.
+Using Unsigned Binary Division method, divide 7 by 3.   "
+Explain IEEE 754 standards for Floating Point number repreferitation. 
+Describe what are the features of cache design?  
+What are the differences between RISC and CISC proL:essors?   
+Explain concepts of Nano programming
+What are major requirements for an I/O morale?     
+Explain in details Virtual Memory, SegmA ntation and Paging. "
+Explain in details Cache Coherency.                                                                            
+What is instruction pipelining? v‘artiat are advantages of pipelining?
+Explain DMA based data transfcr technique for I/O devices.    
+Explain Microinstruction sequencing and execution.                                                                
+Pipeline Hazards. 
+"Scanner,"
+Interrupt driven I/O."
+"Explain role of different registers-like IR, PC,513,AC,MAR and MDR used in VIITE Neumann "
+Differentiate between Computer Organization and Computer Archlt 
+List different memory organization characteristics
+What-is virtual memory? 
+Show IEEE 754 standards for Binary Floating Point Representation for 32 bit single format and 
+Draw the flow chart for Booth's Algorithm for-cos complement multiplication.
+Using Booth's algorithm show the multkili4tion of -3.* •7
+What are differences between RISC aizOSC processor'?  
+Describe hardwire control unit anctWeilfy its advantages. 
+Explain six stage Instruction     
+Calculate the hit and mir.r\sing various page replacement polleieiLRU,OPT,FIFO for "
+ Calculate the hit and mir.r\sing various page replacement polleieiLRU,OPT,FIFO for "
+ompare irtrupt driven I/O and DMA 
+el 4n set associative and associative cache mapping techniques 
+kWhat is bus arbitration? Explain any two techniques of bus arbitration.  
+Explain various pipeline hazards.
+"Express (35.25),0 in the IEEE single precision standard of floating point "
+ Explain in brief the function of 8089 1/0 processor
+Compare RISC and CISC processors.
+Differentiate between Computer Architecture and Computer organization. 
+Explain Flynn's classification in detail.   
+Explain the Interleaved memory,"
+Calculate number of page faults and page hits for the page replacement policies  
+What is the need of DMA? Explain its various techniques of data transfer.   
+What is Bus arbitration? Explain its tec-hniques .
+Describe the register organization within the CPU. 
+What are the features of cache memory design? 
+Booth's algorithm.                                                        
+Joysticks
+The characteristics of memory
+Microinstruclions to execute an instruction IVIONI [R1], R2."
+Explain Von Neumann architecture in detail.
+Explain various pipeline hazards with example.
+Di fleruntiate between Computer Organization  
+Explain Flynn's Classification.
+What are the differences between RISC an 
+Convert (127.125)10 in IEEE-754 single and double precsion floating point 10 
+Explain micro instruction sequencing -auftexecution.   
+"Calculate the hit and miss using various page replacement policies t.Hti, 10 "
+Explain the importance of multiple bus hierarchies with the help of suitable 10 
+Describe Hardwired Control Unit and specify its advantages.
+Describe the characteristics of Memory. 
+based data transfer technique for I/O devices.   
+by using Booth's algorithm of Multiplication.
+Cache Coherency 
+Suanner
+Interrupt driven I/O 
+Explain Virtual Memory.
+What is 10 buffering
+Write a note on scanner.
+What is Segmentation?
+What is TLB?
+Dray k the flow chart for Restore Division Algorithm.
+Divide using restore division method 7/3.  
+escribe hard-wire control unit and specify its advantages.  
+Multiply (-5) and (2) using Booth's Algorithm.
+A block set associative cache consists of (4 blocks divided in 4 block sets. The main memory
+1-1owmanIttbits are there in main memory address?
+ow many bits are there in cache memory address 
+Differentiate between I. RISC and CISC processor.
+Explain Flynn's-classification.   
+Discuss the functions of 8089 1/0 processor. 
+ShoWIEEE 754 Sfandards for Binary Floating Point Representation for 32 bit single format and 64 10 
+Explain different pipelining hazards.
+Discuss the functions of 8-049-1,40--es'sor INAA "
+List different memory organization characteristics.
+What is 10 buffering?
+In floating pciint representation how to identify sign of exponeutl
+ What is virtual memory?
+What is TLB?
+Draw the flow chart for Booth's Algorithm for two's complement multiplication. 
+Using Booth's algorithm Multiply 14 times -5.
+ Describe hard-wire control unit and specify its advantages.
+Compare interrupt driven 110 and DMA  
+Calculate the hit and miss using various page replacement policies LRU, OPT, FIFO for following 10 "
+xplain set associative and associative cache mapping techniques 
+Explain Flynn's classification  
+Explain six stage instruction pipeline-with suitable diagram. 
+Differentiate between I. RISC and CISC II. SRAM and DRAM  
+Explain different pipe lining hazards   
+Explain in brief cache coherency problem
+Write a note on scanner.
+What are the functions of following registers? 
+What are the functions of following registers? i) IR ii) SP iii) MAR IV) MDR V) PC
+Compare SRAM & DRAM?
+" What the help of diagram, explain Von-Neumann's"
+What are the major requirements of I/O module? 7.t.
+Divide 7 by 3 using non-restoring division algorithms.
+Explain various pipeline hazards with example.
+Multiply (-5) and (2) using Booth's Algorithm.
+"Consider the string 9,8,2,3,2,9,5,9,8,2,6,7,5,3,8,2,3,2,8 Find the page faults for 3 frames using FIF0,10 OPT, & LRU page replacement policies."
+Explain various cache mapping functions.
+Draw and explain instruction cycle with interrupt execution. 
+Discuss the functions of 8089 I/O processor.   
+Explain th1,-Menwry hierarchy.     "
+Describe the register organization within the CPU. 
+What is bus arbitration? Explain its techniques. 
+What is TLB? Explain its working.                              
+Write a note on scanner
+Draw and explain the flowchart of Add & shift method of integer multiplication
+Briefly explain Flynn's classification
+"With the help of diagram, explain Von- Neumann's architecture"
+What are the major functions of 110 module?
+Divide 6 by 2 using restoring division algorithms   
+Discuss various pipline hazards with example  
+Multiply (-2) and ( 2) using Booth's Algorithm.
+"Consider the string 9,4,2,3,2,9,5,9,4,2,6,7,5,3,4,2,3,2,4,Find the page faults for 3 frames using FIFO, Optimal & LRU page replacement policies"
+Explain various cache mapping function  
+Draw and explain instruction cycle with interrupt execution                 10
+Explain the various characteristics of memory  
+Describe-the register organization within the CPU 
+What is bus arbitration? Explain its techniques     
+Whatis the need of DMA? Explain its various techniques of data transfer
+"Convert the following number 256.325 into IEEE 32 bit Single Precision Format and IEEE 64 bit Double recision Format ,"
+Discuss difference between RISC and CISC processors:
+Explain function of 8089 I/O processor in brief.
+Differentiate between SRAM and DRAM 
+ Explain cache consistency and coherency with suitable examples. Also, give methods to maintain cache consistency."
+Explain DMA based data transfer techniques.
+Explain how Virtual Address is translated to Physical address with suitable 
+Compare between Cache Look Aside Architecture and Cache Look through Architecture 
+Explain the Bus Arbitration Techniques  
+Explain hardwired Control Unit with help of neat diagram. Compare it with        microprogrammed control unit.
+What is TLB? Explain working of TLB.       
+Describe register organization within CPU
+Hazards in Pipelining    
+Interrupt driven I/O  
+Interleaved memory 
+Modes of DMA  
+Design an arithmetic circuit with one selection variable'S' and two n-bit data inputs A and B. The circuit generates the following four arithmetic operat ions in conjunction with the input carry C in Draw the logic
+What are registe rs? Mention va ri ous types of Registers and explain any two .
+Explain the principle of pipelining with the help of space time diagram. Derive an expression for speedup.
+What is the difference between logical, circular and arithmetic shift ? Starting fro m an initial value of R = 110 111 0 1, determine the sequence of binary values in R after a logical shift-left, followed by a circular shift-right, fol lowed by a logical shift-right and circular shift-left.
+Explain with the help of flo w diagram how an instruction is fetched, decoded and executed ?
+Register A holds the 8-bit binary 11111001 . Determine operand B and the logic micro operation to performed in order to change the value in A to :
+Draw and expl ain the instruction cycle and the control functions associated with each of the phases. Show the execut e phase for any one memory referenceinstruction.
+What are the various techniques for data transformation from main memorv to Cache memory? 
+What is cache coherence problem in microprocessorsystem? How can it be so lved? Explain in detail
+What are buses? Discuss bus arbitration scheme ?
+What is an interrupt ? Explain the difference between types of interrupts in dctail.
+What is cache coherence problem in microprocessor system? How can it be so lved? Explain in detail .
+Explain flow chart of Booth's mul tiplication • algorithm in detai 1. A I so compute 7X(-8) us1 ng Booth' s Algo .
+Describe one address, two address instruction format with the help of examples. Discuss register direct, register ind irect and index edaddressing modes al ong with their merits & demerits ?
+Differentiate between following :- RISC and CISC Tightly coupled and loosely coupled multiprocessor.
+Define addressing modes? Explain various type of addressing modes in details? (1 O)
+Show complete logic of interrupt flip-fl_op 'R' in basic computer system? Use JK-flip flop and minimize the number of gates?
+Show the step-by-step multiplication process using Booth algorithm, when the following binary numbersare multiplied. Assume 5-bit registers that hold signednumbers.
+Explain working of four segment instruction pipeline with suitable flow chart?
+A non-pipeline system takes 50 ns to process a task. The same task can be processed in a six-segment pipeline w~th a clock cycle of 10 ns. Determine the speedup ratio of the pipeline for 100 tasks. What is the maximum speedup that can be achieved?
+Discuss mapping process 1n contrast with memory management? Also explain each type of mapping process with suitable diagram?
+Draw a space-time diagram for a six segment pipeline showing the time it takes to process eight tasks?
+How many lines must be decoded for chip select? Specify the size of decoders?
+How many lines of the address bus must be used to access 2048 bytes of memory? How many of these lines will be common to all chips?
+(a) What are the types of pipeline hazards ? (b) Explain in brief memory mapped I/O. (c) Explain in detail cache coherence. (d) Draw flow chart of Booth's algorithm. 
+(e) Define stored program concept and draw Von Neumann's Architecture. 
+2. (a) Explain in detail different types of addressing modes_ (b) Multiply ( — 2)io and (— 5)10 using Booth's Algorithm. 
+3. (a) Explain Wilke's Engine (Hardwired Control Utit) in detail. (b) Explain virtual memory with reference to memory hierarchy, segments and pages. 
+4. (a) Explain features of RISC and CISC processors. 
+(b) Explain six stage instruction pipeline with suitable diagram. 
+5. (a) Explain various high speed memories such as interleaved memories and caches. (b) Explain LRU page replacement policy with suitable example. 
+(a) What is Bus Arbitration ? Explain any two techniques of Bus Arbitration. 
+Nano Programming
+DMA 
+Plotter
+(a) What are applications of Microprogramming? 
+(b) What is stored program concept in digital computer? 
+(c) List the Flynn's Classification of Parallel Processing Systems. 
+(d) Draw flowchart for Booth's Algorithm for Twos Complement Multiplication. 
+(e) What is Associative memory? 
+(f) Explain in brief Programmed I/O. 
+(a) Explain with diagram functioning of Hardwired Control Unit. 
+(b) Using Unsigned Binary Division method, divide 7 by 3. 
+(c) Explain IEEE 754 standards for Floating Point number representation. 
+(a) Describe what are the features of cache design? 
+(b) What are the differences between RISC and CISC processors? 
+(c) Explain concepts of Nano programming. 
+(a) What are major requirements for an I/O moriule? 
+(b) Explain in details Virtual Memory, SegmP ntation and Paging. 
+(c) Explain in details Cache Coherency. 
+(a) What is instruction pipelining? 
+(b) Explain DMA based data trarnsfer technique for I/O devices. 
+(c) Explain Microinstruction..esiuencing and execution. 
+Write short note on: 
+(a) Pipeline Hazards. 
+(b) Scanner. 
+c) Interrupt driven I/O. 
+
+
+
+

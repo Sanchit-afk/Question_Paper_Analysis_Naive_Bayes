@@ -1,0 +1,39 @@
+What is stored program concept
+Show IEEE 754 Standards for Binary Floating-Point Representation for 32 bit single  format and 64 bit double format.
+What are applications of Microprogramming? 
+What is Virtual Memory? 
+Explain in bfief function of 8089 I/O Processor.
+Name the Flynn's Classification of Parallel Processing Systems.  
+Dralyirt e flow chart for Booth's Algorithm for Twos Complement Multiplication
+Explain with diagram functioning of Tvlicroprogrammed Control Unit
+What are the differences between RISC and CISC processors?
+Describe hardwired control unit and specify its advantages.
+What are characteristics of memory devices'
+Explain in details Memory Hierarchy with examples.
+What are elements of cache design? Explain in details.
+What are major requirements f:Pr an I/O module?
+Explain the DINvetA based ciata transfer techniques for I/O devices. 
+ Explain concepts of nanoprogramming.  
+What is instruction pipelining? 
+Touch Pad
+  Programmed I/O
+What are the types of pipeline hazards ?
+ Explain in brief memory mapped I/O.
+Explain in detail cache coherence.
+Draw flow chart of Booth's algorithm.
+Define stored program concept and draw Von Neumann's Architecture.
+ Explain in detail different types of addressing modes. 
+Multiply ( — 2)10 and (— 5)10 using Booth's Algorithm
+ Explain Wilke's Engine (Hardwired Control Unit) in detail.
+Explain virtual memory with reference to memocy hierarchy, seg"
+Explain features of RISC and CISC processors.
+Explain six stage instruction pipeline with suitable diagram. 
+ Explain various high speed meffica-ies such as interleaved memories and caches.
+Explain LRU page replacement policy with suitable example.
+What is Bus Arbitration ? Explain any two techniques of Bus Arbitration.
+Nano progamming
+DMA (Direct Memory Access)
+Plotter.
+What are applications of Microprogramming? 
+What is stored program concept in digital computer? 
+List the Flynn's Classification of Parallel Processing Systems. 

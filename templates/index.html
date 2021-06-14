@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Paper Anaylzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body style="background: linear-gradient(rgba(40, 70, 80, 0.8),rgba(40, 70, 80, 0.8)),url({{ url_for('static', filename='images/analysis.png') }})">
+    <main>
+        <section class="info">
+            <br>
+            <h1 class="hero__font">Question Paper Analyzer using Machine Learing</h1>
+            
+        </section>
+        <section class="card_group">
+            <div class="cards">
+                <a href="/aoaanalysis">
+                    <div class="card" >
+                        <img src="{{ url_for('static', filename='images/big_O_1.jpg') }}" alt="" height="200px" >
+                        <div class="container">
+                            <p class="icon_top">Analysis of Algorithms</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="cards">
+                <a href="/coaanalysis">
+                    <div class="card" >
+                        <img src="{{ url_for('static', filename='images/coa.jpg') }}" alt="" height="200px" >
+                        <div class="container">
+                            <p class="icon_top">Computer Organization and Architecture</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>

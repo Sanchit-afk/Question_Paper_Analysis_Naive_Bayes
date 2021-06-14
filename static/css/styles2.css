@@ -1,0 +1,130 @@
+:root{
+    --accent: #ea9180;
+    --accentHover: #ff7256;
+    --dark: #304969;
+    --dark80: rgba(40, 70, 80, 0.9);
+    --dark60: rgba(40, 70, 80, 0.6);
+    --light: #f5f9fc;
+    --trasition: all 0.3s ease 0s;    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+    overflow: auto;
+
+}
+
+body{
+    background:
+        linear-gradient(
+            var(--dark60),
+            var(--dark60)
+        ),
+        url('');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+p, a {
+    color: var(--light);
+    text-decoration: none;
+}
+
+a {
+    cursor: pointer;
+}
+
+main{
+    height: 100%;
+    display: grid;
+    grid-template-columns: minmax(60px,1fr) repeat(8, minmax(50px, 190px)) minmax(60px,1fr);
+
+}
+
+header{
+    grid-column: 2 / span 6;
+    height: 180px;
+}
+nav {
+    display: flex;
+    align-items: center;
+    height: 150px;
+
+}
+
+.links{
+    margin-left: auto;
+}
+
+.links a{
+    font-size: 1.625rem;
+    font-weight: 400;
+    transition: var(--trasition);
+    margin-right: 50px;
+}
+
+.links a:hover{
+    color: var(--accent);
+}
+
+.info {
+    margin: 0px;
+    grid-column: 4/span 6;
+
+}
+
+.hero__font {
+
+    color: var(--light);
+    font-weight: 700;
+    font-size: 2.375rem;
+    align-items: center;
+}
+
+.info p{
+    color: var(--light);
+    font-weight: 700;
+    font-size: 1.35rem;
+    text-align: justify;
+}
+.previous_graphs{
+    grid-column: 3 / span 6;
+    
+}
+.chartjs{
+    width: 1000px;
+    height:600px
+}
+
+.upload_files{
+    grid-column: 3 / span 6;
+    display: inline-flex;
+    
+}
+
+.upload_files h2{
+    color: var(--light);
+}
+.upload_files form{
+    padding-right: 50px;
+}
+
+.filesform input[type = file]{
+    width: 110px;
+}
+
+.custom_graphs{
+    grid-column: 3 / span 6;
+    
+}
+
+
+.filesform{
+    display: inline-flex;
+}

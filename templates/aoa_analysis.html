@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AOA Question Paper Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles2.css') }}">
+    <script src="{{ url_for('static', filename='js/Chart.min.js') }}"></script>
+</head>
+<body style="background: linear-gradient(rgba(40, 70, 80, 0.9),rgba(40, 70, 80, 0.9)),url({{ url_for('static', filename='images/analysis.png') }})">
+    <main>
+        <section class="info">
+            <br>
+            <h1 class="hero__font">Analysis of Algorithms Question Papers Analysis</h1>
+            <br>
+        </section>
+        <section class="previous_graphs">
+            <div class="bargraph">
+                
+                <canvas id="chartjs-1" class="chartjs"></canvas>
+                
+            </div>
+            <div class="piegraph">
+                
+                <canvas id="chartjs-2" class="chartjs" ></canvas>
+                
+            </div>
+            
+        </section>
+        <section class="upload_files">
+            <div>
+                <h2>Upload .txt File to Analyze new paper</h2>
+                <br>
+                <form method=post enctype=multipart/form-data action="{{ url_for('coaanalysis')}}">
+                    <input type=file name=text_only accept=".txt">
+                    <input type=submit value="Upload Text" name="submit">
+                </form>
+            </div>
+        </section>
+        <section class="custom_graphs">
+            <div class="bargraph">
+                
+                <canvas id="chartjs-1-custom" class="chartjs"></canvas>
+                
+            </div>
+            <div class="piegraph">
+                
+                <canvas id="chartjs-2-custom" class="chartjs"></canvas>
+                
+            </div>
+            
+        </section>
+    </main>
+
+    <script>
+        
+        Chart.defaults.global.defaultFontSize = 12;
+        Chart.defaults.global.defaultFontColor = '#FFFFFF';
+        new Chart(document.getElementById("chartjs-1"),{
+            "type":"bar",
+            "data":{
+                "labels":{{names | tojson}},
+                "datasets":[{
+                    "label":"Questions",
+                    "data":{{values | tojson}},
+                    "fill":false,
+                    "backgroundColor":["rgba(255, 99, 132, 0.9)","rgba(255, 159, 64, 0.9)","rgba(255, 205, 86, 0.9)","rgba(75, 192, 192, 0.9)","rgba(54, 162, 235, 0.9)","rgba(153, 102, 255, 0.9)","rgba(201, 203, 207, 0.9)"],                    "borderColor":["rgb(255, 99, 132)","rgb(255, 159, 64)","rgb(255, 205, 86)","rgb(75, 192, 192)","rgb(54, 162, 235)","rgb(153, 102, 255)","rgb(201, 203, 207)"],
+                    "borderWidth":1
+                }]
+            },
+            "options":{
+                responsive: true,
+                maintainAspectRatio: false,
+                title:{
+                    display:true,
+                    text:'Question Distribution From Previous Years',
+                    fontSize:20
+                },
+                layout: {
+                    padding: {
+                        left: 50,
+                        right: 300,
+                        top: 50,
+                        bottom: 0
+                    }
+                },
+                legend:{
+                    display:false,
+                    labels:{
+                        fontColor:'#000'
+                    }
+                },
+                "scales":{
+                    "yAxes":[{
+                        "ticks":{
+                            "beginAtZero":true
+                        }
+                    }],
+                    "xAxes":[{
+                        "ticks":{
+                            fontSize: 14
+                        },
+                        
+                        categoryPercentage: 1.0,
+                        barPercentage: 0.6
+                    }]
+                }
+            }
+        });
+    </script>
+    <script>
+        Chart.defaults.global.defaultFontSize = 12;
+        Chart.defaults.global.defaultFontColor = '#FFFFFF';
+        new Chart(document.getElementById("chartjs-2"),{
+            "type":"doughnut",
+            "data":{
+                "labels":{{names | tojson}},
+                "datasets":[{
+                    "label":"Questions",
+                    "data":{{values | tojson}},
+                    "fill":false,
+                    "backgroundColor":["rgba(255, 99, 132, 0.9)","rgba(255, 159, 64, 0.9)","rgba(255, 205, 86, 0.9)","rgba(75, 192, 192, 0.9)","rgba(54, 162, 235, 0.9)","rgba(153, 102, 255, 0.9)","rgba(201, 203, 207, 0.9)"],
+                    "borderColor":["rgb(255, 99, 132)","rgb(255, 159, 64)","rgb(255, 205, 86)","rgb(75, 192, 192)","rgb(54, 162, 235)","rgb(153, 102, 255)","rgb(201, 203, 207)"],
+                    "borderWidth":1
+                }]
+            },
+            "options":{
+                responsive: true,
+                maintainAspectRatio: false,
+                title:{
+                    display:true,
+                    text:'Question Distribution From Previous Years',
+                    fontSize:25
+                },
+                layout: {
+                    padding: {
+                        left: 50,
+                        right: 300,
+                        top: 50,
+                        bottom: 100
+                    }
+                },
+                legend:{
+                    display:false,
+                    position:'right',
+                    labels:{
+                        fontColor:'#000'
+                    }
+                },
+                plugins: {
+                    datalabels: {
+                        formatter: (value, ctx) => {
+                
+                        let datasets = ctx.chart.data.datasets;
+                
+                        if (datasets.indexOf(ctx.dataset) === datasets.length - 1) {
+                            let sum = datasets[0].data.reduce((a, b) => a + b, 0);
+                            let percentage = Math.round((value / sum) * 100) + '%';
+                            return percentage;
+                        } else {
+                            return percentage;
+                        }
+                        },
+                        color: '#fff',
+                    }
+                }
+            }
+        });
+    </script>
+    <script>
+        Chart.defaults.global.defaultFontSize = 12;
+        Chart.defaults.global.defaultFontColor = '#FFFFFF';
+        new Chart(document.getElementById("chartjs-1-custom"),{
+            "type":"bar",
+            "data":{
+                "labels":{{custom_names | tojson}},
+                "datasets":[{
+                    "label":"Questions",
+                    "data":{{custom_values | tojson}},
+                    "fill":false,
+                    "backgroundColor":["rgba(255, 99, 132, 0.9)","rgba(255, 159, 64, 0.9)","rgba(255, 205, 86, 0.9)","rgba(75, 192, 192, 0.9)","rgba(54, 162, 235, 0.9)","rgba(153, 102, 255, 0.9)","rgba(201, 203, 207, 0.9)"],
+                    "borderColor":["rgb(255, 99, 132)","rgb(255, 159, 64)","rgb(255, 205, 86)","rgb(75, 192, 192)","rgb(54, 162, 235)","rgb(153, 102, 255)","rgb(201, 203, 207)"],
+                    "borderWidth":1
+                }]
+            },
+            "options":{
+                responsive: true,
+                intainAspectRatio: false,
+                title:{
+                    display:true,
+                    text:'Question Distribution For Given Paper',
+                    fontSize:25
+                },
+                layout: {
+                    padding: {
+                        left: 50,
+                        right: 300,
+                        top: 50,
+                        bottom: 0
+                    }
+                },
+                legend:{
+                    display:false,
+                    position:'right',
+                    labels:{
+                        fontColor:'#000'
+                    }
+                },
+                "scales":{
+                    "yAxes":[{
+                        "ticks":{
+                            "beginAtZero":true
+                        }
+                    }],
+                    "xAxes":[{
+                        "ticks":{
+                            fontSize: 14
+                        },
+                        
+                        categoryPercentage: 1.0,
+                        barPercentage: 0.6
+                    }]
+                }
+            }
+        });
+    </script>
+    <script>
+        Chart.defaults.global.defaultFontSize = 12;
+        Chart.defaults.global.defaultFontColor = '#FFFFFF';
+        new Chart(document.getElementById("chartjs-2-custom"),{
+            "type":"doughnut",
+            "data":{
+                "labels":{{custom_names | tojson}},
+                "datasets":[{
+                    "label":"Questions",
+                    "data":{{custom_values | tojson}},
+                    "fill":false,
+                    "backgroundColor":["rgba(255, 99, 132, 0.9)","rgba(255, 159, 64, 0.9)","rgba(255, 205, 86, 0.9)","rgba(75, 192, 192, 0.9)","rgba(54, 162, 235, 0.9)","rgba(153, 102, 255, 0.9)","rgba(201, 203, 207, 0.9)"],
+                    "borderColor":["rgb(255, 99, 132)","rgb(255, 159, 64)","rgb(255, 205, 86)","rgb(75, 192, 192)","rgb(54, 162, 235)","rgb(153, 102, 255)","rgb(201, 203, 207)"],
+                    "borderWidth":1
+                }]
+            },
+            "options":{
+                responsive: true,
+                maintainAspectRatio: false,
+                title:{
+                    display:true,
+                    text:'Question Distribution For Given Paper',
+                    fontSize:25
+                },
+                layout: {
+                    padding: {
+                        left: 50,
+                        right: 300,
+                        top: 50,
+                        bottom: 100
+                    }
+                },
+                legend:{
+                    display:false,
+                    position:'right',
+                    labels:{
+                        fontColor:'#000'
+                    }
+                },
+                plugins: {
+                    datalabels: {
+                        formatter: (value, ctx) => {
+                
+                        let datasets = ctx.chart.data.datasets;
+                
+                        if (datasets.indexOf(ctx.dataset) === datasets.length - 1) {
+                            let sum = datasets[0].data.reduce((a, b) => a + b, 0);
+                            let percentage = Math.round((value / sum) * 100) + '%';
+                            return percentage;
+                        } else {
+                            return percentage;
+                        }
+                        },
+                        color: '#fff',
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
+<!-- 
+var data = [{
+    data: [50, 55, 60, 33],
+    labels: ["India", "China", "US", "Canada"],
+    backgroundColor: [
+      "#4b77a9",
+      "#5f255f",
+      "#d21243",
+      "#B27200"
+    ],
+    borderColor: "#fff"
+  }];
+ 
+  var options = {
+    tooltips: {
+      enabled: false
+    },
+    plugins: {
+      datalabels: {
+        formatter: (value, ctx) => {
+ 
+          let datasets = ctx.chart.data.datasets;
+ 
+          if (datasets.indexOf(ctx.dataset) === datasets.length - 1) {
+            let sum = datasets[0].data.reduce((a, b) => a + b, 0);
+            let percentage = Math.round((value / sum) * 100) + '%';
+            return percentage;
+          } else {
+            return percentage;
+          }
+        },
+        color: '#fff',
+      }
+    }
+  };
+ 
+ 
+  var ctx = document.getElementById("pie-chart").getContext('2d');
+  var myChart = new Chart(ctx, {
+    type: 'pie',
+    data: {
+      datasets: data
+    },
+    options: options
+  }); -->
